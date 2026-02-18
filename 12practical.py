@@ -11,8 +11,6 @@ def slowshuffle(N):
             shuffled.append(r)
             isNotPresent[r] = False
             count += 1
-
-    # find last remaining number
     for i in range(1, N + 1):
         if isNotPresent[i]:
             shuffled.append(i)
